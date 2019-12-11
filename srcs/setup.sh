@@ -34,11 +34,16 @@ apt install nginx -y
 # For install WGET (check at the end of the script for the definition)
 apt-get -y install wget
 
+# For install PHP (check at the end of the script for the definition)
+apt -y install php
+
+# For install MYSQL (check at the end of the script for the definition)
+apt-get -y install php-mysql
+
 # For install MARIADB-SERVEUR
 # (check at the end of the script for the definition)
 apt-get -y install mariadb-server
-
-apt -y install php-{mbstring,zip,gd,xml,pear,gettext,cli,fpm,cgi}
+#apt -y install php-{mbstring,zip,gd,xml,pear,gettext,cli,fpm,cgi}
 
 ################################################################################
 
@@ -75,3 +80,8 @@ chown www-data:www-data /usr/share/nginx/html/ -R
 # It can be the mysql command, or commonly a PHP script.
 # It will be necessary in this case to install The
 # php-mysql module which allows PHP to communicate with a MySQL server.
+
+# Php :
+# Generalist and open source scripting language,
+# specially designed for web application development.
+# It can be easily integrated with HTML.
