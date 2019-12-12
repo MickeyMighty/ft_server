@@ -43,6 +43,7 @@ apt-get -y install php-mysql
 # For install MARIADB-SERVEUR
 # (check at the end of the script for the definition)
 apt-get -y install mariadb-server
+#apt -y install php-{mbstring,zip,gd,xml,pear,gettext,cli,fpm,cgi}
 
 ################################################################################
 
