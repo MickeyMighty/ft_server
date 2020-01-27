@@ -1,17 +1,10 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Dockerfile                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: loamar <marvin@42.fr>                      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/12/06 05:00:08 by loamar            #+#    #+#              #
-#    Updated: 2019/12/11 20:51:17 by loamar           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 FROM debian:buster
 
-MAINTAINER Lorenzo Amar <loamar@student.42.fr>
-
-CMD ["sh","-c", "tail -f /dev/null"]
+MAINTAINER MickeyMighty
+COPY srcs/server.conf ./root/
+COPY srcs/wordpress.sql ./root/
+COPY srcs/startme.sh .
+COPY srcs/config.inc.php ./root/
+COPY srcs/wp-config.php ./root/
+COPY srcs/index.html ./root/
+COPY srcs/README .
